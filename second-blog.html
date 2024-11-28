@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>second-blog</title>
+    <link rel="stylesheet" href="./bootstrap-5.0.2//dist//css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./bootstrap-5.0.2//dist//js/bootstrap.min.js"></script>
+    <style>
+        .text-justify{
+            text-align: justify;
+        }
+        .bg-white{
+            background-color: #fff;
+        }
+        .rounded-r {
+  border-top-right-radius: 5px;  
+  border-bottom-right-radius: 5px; 
+}
+.fw-semibold{
+    font-weight: 600;
+}
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container-fluid  bg-dark">
+            <div class="container"> 
+            <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Start Bootstrap</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse nav justify-content-end" id="collapsibleNavbar">
+                    <ul class="nav navbar-nav  ">
+                      <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link " href="./about.html">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact</a>
+                      </li>   
+                      <li class="nav-item">
+                        <a class="nav-link" href="./pricing.html">Pricing</a>
+                      </li>  
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Faq</a>
+                      </li>    
+                      <li class="nav-item">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown">Blog</a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item " href="./blog.html">Single-Blog</a></li>
+                              <li><a class="dropdown-item active" href="#">second-Blog</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Portfolio</a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Single-Portfolio</a></li>
+                            </ul>
+                          </li>
+                      </li>    
+                    </ul>
+                  </div>
+                </div>
+                </nav>        
+                </div>
+                </div>
+
+
+                <div class="container-fluid mt-5">
+                    <div class="container ">
+                        <div class="row">
+                            <div class="bg-dark col-md-4">
+
+                            </div>
+                            <div class="col-md-8 px-4 mt-5">
+                                <h1>Welcome to Blog Post!</h1>
+                                <i>january 1, 2022</i>
+                                <span>Web Design</span> <span>Freebies</span>
+                                <img class="d-block w-100" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVEAAACWCAMAAABQMkvIAAAANlBMVEXMzMyUlJTPz8+WlpaSkpKysrKcnJygoKCZmZmjo6PHx8fKysq5ubmsrKydnZ2+vr61tbWurq7qBYAjAAAFJUlEQVR4nO2a646sKhCFBbRF0Ebf/2VPVXGVntkzvTPJznDW96cNKoZF3YCeJgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAn0YTbzb81Ue++Oo47Me2nb6OTgduaB7Q7tq2xb87freHe59700PscxpQUx3srIxR81IGt0mDcblBL/GJ/c3hP2ab3/ArdaGUdeWzh/SpwniSOsMDo9FlwfSmYoNJwydB0xNvDV+fyjzSC/qZ+rT55pEalPu0g1+Kfhplz7CzjDI4vZN+S9itUlvUwykzHyGsqujxLTzNSVJUL9Q7fYQEPGJLoI9cIZDQz9GMlPRbOZiRRcXR6odhV9QstYRBMifFEYF/z+8Pn62w2CgbPPXpbZ621Sh2Cb2R4f/8oP4lNKTkdzRI4+k3JGXLhS92VBX6Bm6uNrrHOSH7Txdk9tEBKOZsgxmpzb7NoyVz0ZfKEj+jl5OyMcLWW5Gm+nmtg/Sqjk1FRTky+9hqZXbIIZJp1luj4JLR8OXMl6REDn40bCc65jEXbSPLcaQoEI7juvdL0Vj50lWdNoocPuqYOorzOBAsUr6excuz0+d7JPEzP1Hvyf1ZJJdH5j7CWnWVyWmmLTmCyRLzPL4RnH8BN0XZI6OlCs7IZTEw8lnVBj2OwaIwJe4uwLJhV3NvPhIvvSK9U4upl0Pgav6mVEIFeTN6b1kwVyqeJiLklyWtSXXQdTtTfMiP68azo7k2X50eaqzU1Oi1U7UjihZ1ZLDJUhkuiNrRc1TcNAnW52uKk2sNySkgR+R7zbRxUBlKUUq+Ni+VqP7Wbaaghc52s6deUS7i6Wn7svAJksqLosufFN3UGyXZL4Aroiu5JtWPbHBl9KToKoruVdH5NnpeaG77PV8xMd62ipY3JCc1jkCK2qEU5RJbbcG5i9bcbK5fKKo697aGtwXuXZKCYrSfKHoMrqg+Z95WUko9xP/e8vpo2Wq5N+ZM/v/0+mhRbGfWPzuHfM1MW6+orF27/RO2OllPSdKhxVSbmXyv6DRaZpp46/dY7XpOWnWDjdWT/7x6kmfqrl9uoqX6uRDnw1i6+Lh6KnY9WvUkiEGl2v6NCn+K23SmS0w+brjGLVbFS9iuwr8tzKb+9V9P3eJ4WSCmVSgFuvSEf8nqXlE+M7O7t2Wyoq6si3jPMMjUrKOuQqflSg7JaceLZ+cCdck7JbncbMNffkftS1/gL4ns9ezZa9kpMZPMUqoP9HA7JdrMWY5oN7n0kcVl3M3LVsT63UOmk2190y1CdSZlJtEx9WnMqoupTiPu5klilgsSTgzQpdMQHfJ2hknLKt8fYfBWyanlPOnDvksio76vtB6Ns+OisvVr48BjjAV8ssh8YNGcYFwcPsnWNqPup6EhnTw9+hup77rVauNJi8uFAbv9wn0+hzsVkcxMlZNby+ExH6od+2JNc3Kntn1/9id3fBIlh0Vxj+WFdvM69lnrAjdznyeltfGqUT76nGc+7iwro3iYTDV/fcTISXDo34zhgLfzPtjkbMrXfGJdqnk+sTbtEfZA6D1Wj3UpyW5OPF33iO2O65/WZrO21r7mF73ZtbxxSJ9bvblIw2M8QWlsfj+OxTVqabccV7g9ch7H/vJirWU//gdT26oD93n7yHlcL30Owutfur5u+Kuv/HifAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/in/Ad0OJlsWoO7CAAAAAElFTkSuQmCC" alt="">
+                                <div class="d-flex flex-column"> 
+                                    <p>
+                                        since is an enterprise that should be a character as an active vity of the free human mind because it transform who we are how we live and give us an understanding of our place in the universe
+                                    </p>
+                                    <p>
+                                        the universe is a large and old and the ingredient ingredient for the life as we know it are a everywhere so there is no reason to think that earth would be a unique in the regard whether of or not the life becomes
+                                    </p>
+                                    <p>
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias cumque est sed? Tempore dolore nisi temporibus maxime cum architecto fugiat nam maiores aspernatur consectetur quidem ad et iusto, delectus minima?
+                                    </p>
+                                </div>
+                                <div class="d-flex flex-column"> 
+                                    <h1>I have odd cosmic thoughts every day</h1>
+                                    <p>
+                                        since is an enterprise that should be a character as an active vity of the free human mind because it transform who we are how we live and give us an understanding of our place in the universe
+                                    </p>
+                                    <p>
+                                        the universe is a large and old and the ingredient ingredient for the life as we know it are a everywhere so there is no reason to think that earth would be a unique in the regard whether of or not the life becomes
+                                    </p>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="contain-fluid mt-4 py-3 bg-dark">
+                    <div class="container">
+                        <div class="d-flex align-items-center justify-content-between">           
+                             <p class="text-light" >Copyright @ Your Website 2022</p>
+                             <ul class="d-flex gap-4">
+                                <li class="text-decoration-none"><a class="text-light fs-5" href="#">terms</a></li>
+                             </ul>
+                        </div>
+                    </div>
+                    </div>
+                    
+    
+</body>
+</html>

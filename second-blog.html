@@ -14,12 +14,23 @@
         .bg-white{
             background-color: #fff;
         }
+        .w-10{
+            width: 10%;
+        }
+        .w-5{
+            width: 5%;
+        }
         .rounded-r {
   border-top-right-radius: 5px;  
   border-bottom-right-radius: 5px; 
 }
 .fw-semibold{
     font-weight: 600;
+}
+.px-6{
+   padding-left:  60px;
+
+   padding-right:  60px;
 }
 
     </style>
@@ -62,7 +73,9 @@
                           <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Portfolio</a>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Single-Portfolio</a></li>
+                              <li><a class="dropdown-item" href="./portfolio.html">Single-Portfolio</a></li>
+                              <li><a class="dropdown-item" href="./second-prtfolio.html">second-Portfolio</a></li>
+
                             </ul>
                           </li>
                       </li>    
@@ -77,39 +90,117 @@
                 <div class="container-fluid mt-5">
                     <div class="container ">
                         <div class="row">
-                            <div class="bg-dark col-md-4">
+                            <div class=" mt-4 col-md-4">
+
+                                <div class="d-flex   align-items-center gap-3  p-4 rounded ">
+                                    <!-- Image Section -->
+                                      <img 
+                                        class="rounded-circle  h-auto img-fluid" 
+                                        src="https://placehold.jp/150x150.png" 
+                                        alt="User Image" 
+                                        style="width: 70px;">
+                                    
+                                    <!-- Comment Content Section -->
+                                    <div class="flex-grow-1">
+                                      <h1 class="fs-5 mb-1">Kelly Rowan</h1>
+                                      <p class="mb-3">
+                                        New Buisness 
+                                      </p>
+                                    </div>
+                                  </div>
+
 
                             </div>
                             <div class="col-md-8 px-4 mt-5">
-                                <h1>Welcome to Blog Post!</h1>
+                                <h1 class="fw-bold">Welcome to Blog Post!</h1>
                                 <i>january 1, 2022</i>
-                                <span>Web Design</span> <span>Freebies</span>
+                                <div class="d-flex gap-2 mt-4 mb-2">
+                                <span class="bg-secondary fw-bold  text-light px-2 rounded mb-2" >Web Design</span> <span class="bg-secondary fw-bold  text-light px-2 rounded mb-2">Freebies</span>
+                                </div>
                                 <img class="d-block w-100" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVEAAACWCAMAAABQMkvIAAAANlBMVEXMzMyUlJTPz8+WlpaSkpKysrKcnJygoKCZmZmjo6PHx8fKysq5ubmsrKydnZ2+vr61tbWurq7qBYAjAAAFJUlEQVR4nO2a646sKhCFBbRF0Ebf/2VPVXGVntkzvTPJznDW96cNKoZF3YCeJgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAn0YTbzb81Ue++Oo47Me2nb6OTgduaB7Q7tq2xb87freHe59700PscxpQUx3srIxR81IGt0mDcblBL/GJ/c3hP2ab3/ArdaGUdeWzh/SpwniSOsMDo9FlwfSmYoNJwydB0xNvDV+fyjzSC/qZ+rT55pEalPu0g1+Kfhplz7CzjDI4vZN+S9itUlvUwykzHyGsqujxLTzNSVJUL9Q7fYQEPGJLoI9cIZDQz9GMlPRbOZiRRcXR6odhV9QstYRBMifFEYF/z+8Pn62w2CgbPPXpbZ621Sh2Cb2R4f/8oP4lNKTkdzRI4+k3JGXLhS92VBX6Bm6uNrrHOSH7Txdk9tEBKOZsgxmpzb7NoyVz0ZfKEj+jl5OyMcLWW5Gm+nmtg/Sqjk1FRTky+9hqZXbIIZJp1luj4JLR8OXMl6REDn40bCc65jEXbSPLcaQoEI7juvdL0Vj50lWdNoocPuqYOorzOBAsUr6excuz0+d7JPEzP1Hvyf1ZJJdH5j7CWnWVyWmmLTmCyRLzPL4RnH8BN0XZI6OlCs7IZTEw8lnVBj2OwaIwJe4uwLJhV3NvPhIvvSK9U4upl0Pgav6mVEIFeTN6b1kwVyqeJiLklyWtSXXQdTtTfMiP68azo7k2X50eaqzU1Oi1U7UjihZ1ZLDJUhkuiNrRc1TcNAnW52uKk2sNySkgR+R7zbRxUBlKUUq+Ni+VqP7Wbaaghc52s6deUS7i6Wn7svAJksqLosufFN3UGyXZL4Aroiu5JtWPbHBl9KToKoruVdH5NnpeaG77PV8xMd62ipY3JCc1jkCK2qEU5RJbbcG5i9bcbK5fKKo697aGtwXuXZKCYrSfKHoMrqg+Z95WUko9xP/e8vpo2Wq5N+ZM/v/0+mhRbGfWPzuHfM1MW6+orF27/RO2OllPSdKhxVSbmXyv6DRaZpp46/dY7XpOWnWDjdWT/7x6kmfqrl9uoqX6uRDnw1i6+Lh6KnY9WvUkiEGl2v6NCn+K23SmS0w+brjGLVbFS9iuwr8tzKb+9V9P3eJ4WSCmVSgFuvSEf8nqXlE+M7O7t2Wyoq6si3jPMMjUrKOuQqflSg7JaceLZ+cCdck7JbncbMNffkftS1/gL4ns9ezZa9kpMZPMUqoP9HA7JdrMWY5oN7n0kcVl3M3LVsT63UOmk2190y1CdSZlJtEx9WnMqoupTiPu5klilgsSTgzQpdMQHfJ2hknLKt8fYfBWyanlPOnDvksio76vtB6Ns+OisvVr48BjjAV8ssh8YNGcYFwcPsnWNqPup6EhnTw9+hup77rVauNJi8uFAbv9wn0+hzsVkcxMlZNby+ExH6od+2JNc3Kntn1/9id3fBIlh0Vxj+WFdvM69lnrAjdznyeltfGqUT76nGc+7iwro3iYTDV/fcTISXDo34zhgLfzPtjkbMrXfGJdqnk+sTbtEfZA6D1Wj3UpyW5OPF33iO2O65/WZrO21r7mF73ZtbxxSJ9bvblIw2M8QWlsfj+OxTVqabccV7g9ch7H/vJirWU//gdT26oD93n7yHlcL30Owutfur5u+Kuv/HifAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/in/Ad0OJlsWoO7CAAAAAElFTkSuQmCC" alt="">
                                 <div class="d-flex flex-column"> 
-                                    <p>
+                                    <p class="fs-4 text-justify">
                                         since is an enterprise that should be a character as an active vity of the free human mind because it transform who we are how we live and give us an understanding of our place in the universe
                                     </p>
-                                    <p>
+                                    <p class="fs-4 text-justify">
                                         the universe is a large and old and the ingredient ingredient for the life as we know it are a everywhere so there is no reason to think that earth would be a unique in the regard whether of or not the life becomes
                                     </p>
-                                    <p>
+                                    <p class="fs-4 text-justify">
                                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias cumque est sed? Tempore dolore nisi temporibus maxime cum architecto fugiat nam maiores aspernatur consectetur quidem ad et iusto, delectus minima?
                                     </p>
                                 </div>
-                                <div class="d-flex flex-column"> 
-                                    <h1>I have odd cosmic thoughts every day</h1>
-                                    <p>
+                                <div class="d-flex flex-column mt-4"> 
+                                    <h1 class="fw-semibold">I have odd cosmic thoughts every day</h1>
+                                    <p class="fs-4 text-justify">
                                         since is an enterprise that should be a character as an active vity of the free human mind because it transform who we are how we live and give us an understanding of our place in the universe
                                     </p>
-                                    <p>
+                                    <p class="fs-4 text-justify">
                                         the universe is a large and old and the ingredient ingredient for the life as we know it are a everywhere so there is no reason to think that earth would be a unique in the regard whether of or not the life becomes
                                     </p>
-                                   
+                                </div>
+
+
+                                <div class="d-flex flex-column border p-3 rounded bg-light mt-5">
+                                    <textarea name="" class="w-100  fs-5 px-4 py-2" placeholder="Comment"></textarea>
+                                    <div class="d-flex   align-items-start gap-3  p-4 rounded ">
+                                        <!-- Image Section -->
+                                          <img 
+                                            class="rounded-circle  h-auto d-block img-fluid" 
+                                            src="https://placehold.jp/150x150.png" 
+                                            alt="User Image" 
+                                            style="width: 50px;">
+                                        <!-- Comment Content Section -->
+                                        <div class="flex-grow-1">
+                                          <h1 class="fs-5 mb-1">Kelly Rowan</h1>
+                                          <span class="text-muted d-block mb-2">March 12, 2022 • 6 min Read</span>
+                                          <p class="mb-3">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio amet dolore.
+                                          </p>
+                                          <a href="#" class="text-decoration-none text-primary">Read more..</a>
+                                        </div>
+                                      </div>
+
+                                      <div class="">
+                                              <div class="d-flex   align-items-start gap-3  p-4 rounded ">
+                                                <!-- Image Section -->
+                                                  <img 
+                                                    class="rounded-circle d-block img-fluid" 
+                                                    src="https://placehold.jp/150x150.png" 
+                                                    alt="User Image" 
+                                                    style="width: 50px;">                                                <!-- Comment Content Section -->
+                                                <div class="flex-grow-1">
+                                                  <h1 class="fs-5 mb-1">Kelly Rowan</h1>
+                                                  <span class="text-muted d-block mb-2">March 12, 2022 • 6 min Read</span>
+                                                  <p class="mb-3">
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio amet dolore.
+                                                  </p>
+                                                  <a href="#" class="text-decoration-none text-primary">Read more..</a>
+                                                </div>
+                                              </div>
+                                      </div>
+                                      <div class="d-flex   align-items-start gap-3  p-4 rounded ">
+                                        <!-- Image Section -->
+                                          <img 
+                                            class="rounded-circle d-block img-fluid" 
+                                            src="https://placehold.jp/150x150.png" 
+                                            alt="User Image" 
+                                            style="width: 50px;">                                        <!-- Comment Content Section -->
+                                        <div class="flex-grow-1">
+                                          <h1 class="fs-5 mb-1">Kelly Rowan</h1>
+                                          <span class="text-muted d-block mb-2">March 12, 2022 • 6 min Read</span>
+                                          <p class="mb-3">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio amet dolore.
+                                          </p>
+                                          <a href="#" class="text-decoration-none text-primary">Read more..</a>
+                                        </div>
+                                      </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                .
 
 
 

@@ -38,35 +38,41 @@
 <body>
     <div class="container-fluid bg-light">
         <div class="container">
-        <nav class="navbar navbar-expand-sm  navbar-dark">
+          <nav class="navbar navbar-expand-sm navbar-dark bg-light">
             <div class="container-fluid">
+              <!-- Navbar Brand -->
               <a class="navbar-brand text-dark" href="./index.html">Start Bootstrap</a>
+              <!-- Toggle Button for Mobile View -->
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                 <i class="fa-solid fa-bars" style="color: #000000;"></i>
               </button>
-              <div class="collapse navbar-collapse " id="collapsibleNavbar">
-                <ul class="navbar-nav">
+              <!-- Collapsible Section -->
+              <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav me-auto">
                   <li class="nav-item">
                     <a class="nav-link text-dark" href="./index.html">Home</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link text-dark" href="./about.html">About</a>
                   </li>
-                
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown">Shop</a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item text-dark " href="./shop.html">shop</a></li>
-                      <li><a class="dropdown-item text-dark active" href="#">A third link</a></li>
+                      <li><a class="dropdown-item text-dark" href="./shop.html">Shop</a></li>
+                      <li><a class="dropdown-item text-dark" href="#">A third link</a></li>
                     </ul>
                   </li>
                 </ul>
+                <!-- Cart Button -->
+                <form class="d-flex">
+                  <button class="btn btn-outline-dark" type="button">
+                    <i class="fa-solid fa-cart-shopping"></i> Cart 0
+                  </button>
+                </form>
               </div>
-              <form class="d-flex">
-                <button class="btn btn-outline-dark " type="button"><i class="fa-solid fa-cart-shopping" ></i> cart 0</button>
-              </form>
             </div>
           </nav>
+          
           </div>
           </div>
           
